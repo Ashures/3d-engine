@@ -1,5 +1,13 @@
 #include "GameObject.h"
 
+bool GameObject::IsEnabled() {
+	return _enabled;
+}
+
+void GameObject::Toggle() {
+	_enabled = !_enabled;
+}
+
 GameObject::GameObject(Vector3 position, Vector3 rotation)
 {
 	_position = position;

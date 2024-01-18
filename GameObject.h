@@ -6,9 +6,12 @@ class GameObject
 protected:
 	Vector3 _position;
 	Vector3 _rotation;
-	bool enabled = true;
+	bool _enabled = true;
 public:
 	GameObject(Vector3 position, Vector3 rotation);
+
+	bool IsEnabled();
+	void Toggle();
 
 	Vector3 GetPosition();
 	void SetPosition(Vector3 positon);
