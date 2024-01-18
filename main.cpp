@@ -3,6 +3,19 @@
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
+const int screenWidth = 800;
+const int screenHeight = 450;
+
+void Draw() {
+    BeginDrawing();
+
+    //----------------------------------------------------------------------------------
+    ClearBackground(RAYWHITE);
+    //----------------------------------------------------------------------------------
+
+    EndDrawing();
+}
+
 void Update() {
     //----------------------------------------------------------------------------------
     // TODO: Update your variables here
@@ -11,23 +24,10 @@ void Update() {
     Draw();
 }
 
-void Draw() {
-    BeginDrawing();
-
-    //----------------------------------------------------------------------------------
-    ClearBackground(RAYWHITE);
-    //----------------------------------------------------------------------------------
-    
-    EndDrawing();
-}
-
 int main(void) {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 800;
-    const int screenHeight = 450;
-
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    InitWindow(screenWidth, screenHeight, "3D Rendering Engine");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
